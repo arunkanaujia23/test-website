@@ -1,6 +1,7 @@
 .statsSectionContainer{
     padding: 50px 0 !important;
-    // background-image: url('../../assets/stats-bg.webp');
+    background-image: url('../../assets/stats-bg.webp');
+    background-blend-mode: lighten;
     background-color: #F84646;
     background-position: bottom;
     background-repeat: no-repeat;
