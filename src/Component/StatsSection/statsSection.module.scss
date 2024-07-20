@@ -1,0 +1,49 @@
+.statsSectionContainer{
+    padding: 50px 0 !important;
+    // background-image: url('../../assets/stats-bg.webp');
+    background-color: #F84646;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // height: 1038px;
+    // width: 1556px;
+    .textContainer{
+        .heading{
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 64px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 8px;
+           
+           
+        }
+        .subHeading{
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 32px;
+            text-align: center;
+            color: #fff;
+        }
+    }
+    .statsContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        margin-top: 50px;
+
+        .stats{
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 700px;
+            color: #fff;
+        }
+        .statsIcon{
+            width: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

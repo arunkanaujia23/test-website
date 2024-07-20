@@ -1,0 +1,32 @@
+.contactUsSection{
+    padding: 100px 0;
+    .contentContainer{
+        
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+        .heading{
+            font-size: 48px;
+            line-height: 32px;
+            font-weight: 800;
+        }
+        .subHeading{
+            font-size: 18px;
+            line-height: 32px;
+            font-weight: 500;
+        }
+        .button{
+            // width: 200px;
+            padding: 25px 40px;
+            border-radius: 8px;
+            background-color: #F84646;
+            border: 0;
+            font-size: 24px;
+            line-height: 20px;
+            font-weight: 600;
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.infoSection{
+    padding: 100px 0 !important;
+
+    .cardContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .imageAndTextCard{
+        display: flex;
+        gap: 150px;
+
+        .image{
+            width: 500px;
+            height: 480px;
+            border-radius: 12px;
+            img{
+                object-fit: cover;
+                border-radius: 12px;
+            }
+        }
+
+        .text{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .heading{
+                font-size: 64px;
+                font-weight: 700;
+                color:#2E2E2E ;
+                line-height: 76px;
+                margin-bottom: 20px;
+            }
+            .description{
+                color: #808080;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 32px;
+            }
+
+            .button{
+                background-color: #F84646;
+                padding: 12px;
+                border-radius: 8px;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 24px;
+                text-align: center;
+                color: #fff;
+                width: 160px;
+               
+            }
+        }
+        
+    }
+
+    .flexDirection{
+        flex-direction: row-reverse
+    };
+}

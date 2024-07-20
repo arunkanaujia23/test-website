@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+.footerSection {
+  background-color: #f8464a;
+  padding: 50px 0;
+  font-family: "Inter", sans-serif;
+  .footerLinksContainer {
+    display: flex;
+    gap: 100px;
+    .links {
+      .linkHeading {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        color: #fff;
+        margin-bottom: 20px;
+      }
+      .linkList {
+        list-style: none;
+        .linkItem {
+            margin-bottom: 20px;
+          a {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 32px;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .bottomFooter{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 26px;
+    .copyright{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        color: #fff;
+    }
+    .socialContainer{
+        display: flex;
+        gap: 20px;
+      
+    }
+  }
+}
