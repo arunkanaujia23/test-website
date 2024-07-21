@@ -1,8 +1,11 @@
 .heroSection {
   background-image: url("../../assets/desktop-hero.webp");
-  height: 754px;
+  min-height: 754px;
   background-repeat: no-repeat;
   background-size: cover;
+  @media screen and (max-width: 768px) {
+    background-position: bottom ;
+  }
   .navList {
     display: flex;
     align-items: center;
@@ -40,12 +43,20 @@
     flex-direction: column;
     gap: 20px;
 
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      justify-content: center;
+    }
+
     .heroHeading {
       font-size: 64px;
       line-height: 82px;
       color: #000000;
       font-weight: 800;
       margin: 0;
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
     }
     .heroSubHeading {
       font-size: 20px;
@@ -54,6 +65,9 @@
       letter-spacing: 0.2px;
       color: #000000;
       margin: 0;
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
     }
 
     .inputContainer {
@@ -62,6 +76,10 @@
       padding: 4px;
       display: flex;
       border-radius: 8px;
+      @media screen and (max-width: 768px) {
+        justify-content: center;
+        margin: auto;
+      }
 
       .input {
         height: 60px;

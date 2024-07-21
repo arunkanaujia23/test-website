@@ -6,6 +6,9 @@
   .footerLinksContainer {
     display: flex;
     gap: 100px;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
     .links {
       .linkHeading {
         font-size: 16px;
@@ -33,6 +36,11 @@
     display: flex;
     justify-content: space-between;
     margin-top: 26px;
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+      gap: 50px;
+
+    }
     .copyright{
         font-size: 16px;
         font-weight: 400;

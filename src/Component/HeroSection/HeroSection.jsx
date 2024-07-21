@@ -1,13 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './heroSection.module.scss'
 
 const HeroSection = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
   return (
     <section className={`${styles?.heroSection}`}>
          <div className={`container`}>
             <header>
+            <div className="toggle-button" onClick={toggleMenu}>
+                ☰
+            </div>
                 <nav >
-                    <ul className={styles?.navList}>
+                    {
+                      isOpen ? (
+                       `ffff`
+                      ) : (
+                        <nav >
+                        <ul className={styles?.navList}>
                         <li className={styles?.navListItem}><a href="#">Çözüm ve Hizmetler</a></li>
                         <li className={styles?.navListItem}><a href="#">Ürünler</a></li>
                         <li className={styles?.navListItem}><a href="#">Teknolojiler</a></li>
@@ -15,6 +28,9 @@ const HeroSection = () => {
                         <li className={styles?.navListItem}><a href="#">Kurumsal</a></li>
                         <li className={styles?.navListItemButton}><a href="#">İletişim</a></li>
                     </ul>
+                    </nav>
+                      )
+                    }
                     
                 </nav>
             </header>

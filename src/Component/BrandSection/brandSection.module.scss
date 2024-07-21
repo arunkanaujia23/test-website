@@ -21,6 +21,10 @@
         // display: grid;
         // grid-template-columns: repeat(5,1fr);
         gap: 24px;
+        @media screen and (max-width: 1024px) {
+            flex-direction: column;
+            // flex-wrap: wrap;
+        }
         .brandRow{
             display: flex;
             align-items: center;
