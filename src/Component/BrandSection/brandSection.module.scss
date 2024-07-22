@@ -34,7 +34,12 @@
             justify-content: center;
             flex-direction: column;
             gap: 24px;
-           
+           @media screen and (max-width: 1024px) {
+              flex-direction: row;
+           }
+             @media screen and (max-width: 592px) {
+              flex-direction: column;
+           }
         }
         .brandCard{
             height: 100px;
